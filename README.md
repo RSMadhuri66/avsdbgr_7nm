@@ -119,9 +119,9 @@ The temperature coefficient is expressed as the change in the reference voltage 
 It is usually expressed in ppm/°C (parts per million per degree Celsius) or mV/°C.
 
 Formula 
-
-TC = [(V_ref(T2) - V_ref(T1)) / ((T2 - T1) * V_ref(T1))] * 10^6 ppm/°C
-
+```
+TC = [(Vref(T2) - Vref(T1)) / ((T2 - T1) * Vref(T1))] * 10^6 ppm/°C
+```
 Where:
 - V_ref(T1) is the reference voltage at temperature T1 (usually at room temperature, e.g., 25°C).
 - V_ref(T2) is the reference voltage at temperature T2 (another temperature, e.g., 85°C).
