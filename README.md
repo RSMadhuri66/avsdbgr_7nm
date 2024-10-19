@@ -181,17 +181,17 @@ I have calculated the parameters from the graphs that were plotted, but to get t
 
 2. **CTAT Voltage Calculation**  
    The Complementary to Absolute Temperature (CTAT) voltage \(V_{CTAT}\) is given by:
-```
+   
    $$
    V_{CTAT} = V_{BE0} - \beta T
    $$
-```
+
    Where:
    - \(V_{BE0}\) = Base-emitter voltage at absolute zero temperature
    - \(\beta\) = Temperature coefficient of \(V_{BE}\) (typically -2 mV/K)
    - \(T\) = Temperature in Kelvin
 
-3. **Reference Voltage Calculation (\(V_{ref}\))**  
+4. **Reference Voltage Calculation (\(V_{ref}\))**  
    The reference voltage is given by:
 
    $$
@@ -201,14 +201,14 @@ I have calculated the parameters from the graphs that were plotted, but to get t
    Where:
    - \(k = \frac{R_2}{R_1}\) (Scaling factor determined by the resistor ratio)
 
-4. **Resistor Values**  
+5. **Resistor Values**  
    The resistor values \(R_1\) and \(R_2\) are given by:
 
    $$
    R_2 = k \cdot R_1
    $$
 
-5. **Startup Circuit Currents**  
+6. **Startup Circuit Currents**  
    The startup current \(I_{startup}\) can be calculated by:
 
    $$
@@ -220,7 +220,7 @@ I have calculated the parameters from the graphs that were plotted, but to get t
    - \(V_{th}\) = Threshold voltage of the nMOS transistor
    - \(R_{startup}\) = Resistance in the startup circuit path
 
-6. **Current Mirror Relationships**  
+7. **Current Mirror Relationships**  
    The output current \(I_{out}\) is given by:
 
    $$
@@ -230,7 +230,7 @@ I have calculated the parameters from the graphs that were plotted, but to get t
    Where:
    - \(I_{ref}\) = Reference current set by the current mirror
 
-7. **Thermal Voltage (\(V_T\))**  
+8. **Thermal Voltage (\(V_T\))**  
    The thermal voltage is given by:
 
    $$
