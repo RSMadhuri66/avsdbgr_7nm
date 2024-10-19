@@ -439,10 +439,10 @@ pre_osdi /home/madhuri/asap_7nm_Xschem/bsimcmg_arch64.osdi
 
 ## Acknolwdgements
 
-I would like to thank Kunal Gosh ( Co-Founder of VSD), Dr Skanda Deepshita (Senior Physical Design Engineer at Lemurian Labs) and Jossan Eden (Electronics Engineer) for guiding me throughout this research work on Bandgap reference circuit using ASAP 7nm PDK. 
+I would like to thank Kunal Gosh ( Co-Founder of VSD), Dr Skanda Deepsita (Senior Physical Design Engineer) and Jossan Eden (Electronics Engineer) for guiding me throughout this research work on Bandgap reference circuit using ASAP 7nm PDK. 
 
 - Kunal Gosh [linkedin](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) 
-- Dr. Skanda Deepshita [Linkedin](https://www.linkedin.com/in/dr-skandha-deepsita-s-027433ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- Dr. Skanda Deepsita [Linkedin](https://www.linkedin.com/in/dr-skandha-deepsita-s-027433ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 - Jossan Eden [Linkedin](https://www.linkedin.com/in/jossan-eleazar-b-79809a25a/) 
 
   ## References
