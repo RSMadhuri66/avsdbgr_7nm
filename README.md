@@ -31,6 +31,37 @@ This document summarizes the key parameters of the bandgap reference circuit use
 
 ## Graphs
 
+### The Schematic Diagram 
+
+<picture>
+<img alt = "Schematic" src="Xschem_bgr.png">
+</picture>
+
+### The Reference Voltage 
+
+<picture>
+<img alt = "BGR voltage" src="Vref_bgr.png">
+</picture>
+
+### The PTAT voltage 
+
+<picture>
+<img alt = "PTAT Voltage" src="Vptat_bgr.png">
+</picture>
+
+### The CTAT Voltage 
+
+<picture>
+<img alt = "CTAT Voltage" src="Vctat_bgr.png">
+</picture>
+
+### Temperature Coefficient
+
+<picture>
+<img alt = "Temp_coeff" src="temp_coeff.png">
+</picture>
+
+
 
 
 
