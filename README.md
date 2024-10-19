@@ -179,7 +179,7 @@ I have calculated the parameters from the graphs that were plotted, but to get t
    - \(N\) = Emitter area ratio of matched transistors
    - \(R_1\) = Resistor value used in the PTAT generation branch
 
-## CTAT Voltage Calculation
+2. **CTAT Voltage Calculation**
 The Complementary to Absolute Temperature (CTAT) voltage \(V_{CTAT}\) is given by:
 
 **V<sub>CTAT</sub> = V<sub>BE0</sub> - βT**
@@ -189,7 +189,8 @@ Where:
 - **β** = Temperature coefficient of \(V_{BE}\) (typically -2 mV/K)
 - **T** = Temperature in Kelvin
 
-## Reference Voltage Calculation (V<sub>ref</sub>)
+3. **Reference Voltage Calculation (V<sub>ref</sub>)**
+
 The reference voltage is given by:
 
 **V<sub>ref</sub> = V<sub>CTAT</sub> + k · V<sub>PTAT</sub>**
@@ -197,12 +198,12 @@ The reference voltage is given by:
 Where:
 - **k = R<sub>2</sub> / R<sub>1</sub>** (Scaling factor determined by the resistor ratio)
 
-## Resistor Values
+4. **Resistor Values**
 The resistor values \(R_1\) and \(R_2\) are given by:
 
 **R<sub>2</sub> = k · R<sub>1</sub>**
 
-## Startup Circuit Currents
+5. **Startup Circuit Currents**
 The startup current \(I_{startup}\) can be calculated by:
 
 **I<sub>startup</sub> ≈ (V<sub>gs</sub> - V<sub>th</sub>) / R<sub>startup</sub>**
@@ -212,7 +213,7 @@ Where:
 - **V<sub>th</sub>** = Threshold voltage of the nMOS transistor
 - **R<sub>startup</sub>** = Resistance in the startup circuit path
 
-## Current Mirror Relationships
+6. **Current Mirror Relationships**
 The output current \(I_{out}\) is given by:
 
 **I<sub>out</sub> = (W/L)<sub>out</sub> · (W/L)<sub>ref</sub> · I<sub>ref</sub>**
@@ -220,11 +221,4 @@ The output current \(I_{out}\) is given by:
 Where:
 - **I<sub>ref</sub>** = Reference current set by the current mirror
 
-## Thermal Voltage (V<sub>T</sub>)
-The thermal voltage is given by:
 
-**V<sub>T</sub> = (kT) / q**
-
-At room temperature (T = 300 K), the thermal voltage is approximately:
-
-**V<sub>T</sub> ≈ 26 mV**
