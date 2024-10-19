@@ -25,7 +25,7 @@ This document summarizes the key parameters of the bandgap reference circuit use
 - **Supply Voltage (\(V_{DD}\))**: Fixed at 1.4 V.
 - **Supply Current (\(IDD\))**: The current draw when enabled is **35.20 µA** at 27°C.
 - **Load Resistance (\(R_L\))**: 33.33 kΩ, affecting output voltage under load.
-- **Resistance \(R1\)**: Set at 33 kΩ, likely involved in the voltage reference circuit's design.
+- **Resistance \(R1\)**: Set at 33 kΩ which is the resistance near PTAT circuit.
 - **Temperature Coefficient** : To find out voltage stability.
 
 
