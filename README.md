@@ -121,15 +121,13 @@ It is usually expressed in ppm/°C (parts per million per degree Celsius) or mV/
 Formula 
 
 ```
-\[
-TC = \frac{V_{ref}(T_2) - V_{ref}(T_1)}{(T_2 - T_1) \cdot V_{ref}(T_1)} \cdot 10^6 \, \text{ppm/°C}
-\]
+TC = [(V_ref(T2) - V_ref(T1)) / ((T2 - T1) * V_ref(T1))] * 10^6 ppm/°C
 
 Where:
-- \( V_{ref}(T_1) \) is the reference voltage at temperature \( T_1 \) (usually at room temperature, e.g., 25°C).
-- \( V_{ref}(T_2) \) is the reference voltage at temperature \( T_2 \) (another temperature, e.g., 85°C).
-- \( T_2 - T_1 \) is the temperature difference in °C.
-- \( 10^6 \) converts the result to parts per million (ppm).
+- V_ref(T1) is the reference voltage at temperature T1 (usually at room temperature, e.g., 25°C).
+- V_ref(T2) is the reference voltage at temperature T2 (another temperature, e.g., 85°C).
+- (T2 - T1) is the temperature difference in °C.
+- 10^6 converts the result to parts per million (ppm).
 
 ```
 
