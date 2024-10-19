@@ -52,7 +52,7 @@ This document summarizes the key parameters of the bandgap reference circuit use
 ### The CTAT Voltage 
 
 <picture>
-<img alt = "CTAT Voltage" src="Vctat_bgr.png">
+<img alt = "CTAT Voltage" src="Vctat_bgr .png">
 </picture>
 
 ### Temperature Coefficient
