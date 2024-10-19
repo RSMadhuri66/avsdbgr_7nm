@@ -163,7 +163,6 @@ Where:
 
 I have calculated the parameters from the graphs that were plotted, but to get the parameters we can always refer to the formulas. 
 
-# Bandgap Reference Circuit Equations
 
 1. **PTAT Current Calculation**  
    The Proportional to Absolute Temperature (PTAT) current \(I_{PTAT}\) is given by:
@@ -182,11 +181,11 @@ I have calculated the parameters from the graphs that were plotted, but to get t
 
 2. **CTAT Voltage Calculation**  
    The Complementary to Absolute Temperature (CTAT) voltage \(V_{CTAT}\) is given by:
-
+```
    $$
    V_{CTAT} = V_{BE0} - \beta T
    $$
-
+```
    Where:
    - \(V_{BE0}\) = Base-emitter voltage at absolute zero temperature
    - \(\beta\) = Temperature coefficient of \(V_{BE}\) (typically -2 mV/K)
