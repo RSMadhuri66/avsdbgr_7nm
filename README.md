@@ -163,40 +163,41 @@ Where:
 
 I have calculated the parameters from the graphs that were plotted, but to get the parameters we can always refer to the formulas. 
 
+```
 ## Circuit Formulas
 
 This section provides the key formulas used to calculate the currents, voltages, resistances, and temperature coefficient in the bandgap reference circuit.
 
 ### Voltages
 
-1. **Output Reference Voltage (\(V_{ref}\))**:
+1. **Output Reference Voltage (\(V_{\text{ref}}\))**:
    \[
-   V_{ref} = V_{ctat} + V_{ptat}
+   V_{\text{ref}} = V_{\text{ctat}} + V_{\text{ptat}}
    \]
    Where:
-   - \(V_{ctat}\) is the complementary to absolute temperature voltage.
-   - \(V_{ptat}\) is the proportional to absolute temperature voltage.
+   - \(V_{\text{ctat}}\) is the complementary to absolute temperature voltage.
+   - \(V_{\text{ptat}}\) is the proportional to absolute temperature voltage.
 
-2. **Proportional to Absolute Temperature Voltage (\(V_{ptat}\))**:
+2. **Proportional to Absolute Temperature Voltage (\(V_{\text{ptat}}\))**:
    \[
-   V_{ptat} = V_{ptat_{min}} + \left( \frac{(T - T_{min})}{(T_{max} - T_{min})} \times (V_{ptat_{max}} - V_{ptat_{min}}) \right)
+   V_{\text{ptat}} = V_{\text{ptat}_{\text{min}}} + \left( \frac{(T - T_{\text{min}})}{(T_{\text{max}} - T_{\text{min}})} \times (V_{\text{ptat}_{\text{max}}} - V_{\text{ptat}_{\text{min}}}) \right)
    \]
    Where:
    - \(T\) is the temperature in °C.
 
-3. **Complementary to Absolute Temperature Voltage (\(V_{ctat}\))**:
+3. **Complementary to Absolute Temperature Voltage (\(V_{\text{ctat}}\))**:
    \[
-   V_{ctat} = V_{ctat_{min}} + \left( \frac{(T - T_{min})}{(T_{max} - T_{min})} \times (V_{ctat_{max}} - V_{ctat_{min}}) \right)
+   V_{\text{ctat}} = V_{\text{ctat}_{\text{min}}} + \left( \frac{(T - T_{\text{min}})}{(T_{\text{max}} - T_{\text{min}})} \times (V_{\text{ctat}_{\text{max}}} - V_{\text{ctat}_{\text{min}}}) \right)
    \]
 
 ### Currents
 
 1. **Supply Current (\(I_{DD}\))**:
    \[
-   I_{DD} = I_{DD_{enabled}} = 35.20 \, \mu A \quad \text{(at 27°C)}
+   I_{DD} = I_{DD_{\text{enabled}}} = 35.20 \, \mu A \quad \text{(at 27°C)}
    \]
 
-2. **Load Current (\(I_L\))** (assuming Ohm's Law):
+2. **Load Current (\(I_L\))** (using Ohm's Law):
    \[
    I_L = \frac{V_L}{R_L}
    \]
@@ -207,17 +208,16 @@ This section provides the key formulas used to calculate the currents, voltages,
 ### Resistances
 
 1. **Load Resistance (\(R_L\))**:
-   - Given:
-     \[
-     R_L = 33.33 \, k\Omega
-     \]
+   \[
+   R_L = 33.33 \, k\Omega
+   \]
 
 2. **Resistance 1 (\(R_1\))**:
-   - Given:
-     \[
-     R_1 = 33 \, k\Omega
-     \]
+   \[
+   R_1 = 33 \, k\Omega
+   \]
 
+```
 
 
 
