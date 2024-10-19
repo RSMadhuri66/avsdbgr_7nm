@@ -181,7 +181,6 @@ I have calculated the parameters from the graphs that were plotted, but to get t
 
 2. **CTAT Voltage Calculation**  
    The Complementary to Absolute Temperature (CTAT) voltage \(V_{CTAT}\) is given by:
-   
    $$
    V_{CTAT} = V_{BE0} - \beta T
    $$
