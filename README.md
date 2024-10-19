@@ -193,32 +193,52 @@ Where:
 
 The reference voltage is given by:
 
+```
 **V<sub>ref</sub> = V<sub>CTAT</sub> + k · V<sub>PTAT</sub>**
+
 
 Where:
 - **k = R<sub>2</sub> / R<sub>1</sub>** (Scaling factor determined by the resistor ratio)
 
+```
+
 4. **Resistor Values**
+
 The resistor values \(R_1\) and \(R_2\) are given by:
 
+```
 **R<sub>2</sub> = k · R<sub>1</sub>**
 
+```
+
 5. **Startup Circuit Currents**
+
 The startup current \(I_{startup}\) can be calculated by:
 
+```
 **I<sub>startup</sub> ≈ (V<sub>gs</sub> - V<sub>th</sub>) / R<sub>startup</sub>**
+
+
 
 Where:
 - **V<sub>gs</sub>** = Gate-source voltage of the startup transistor
 - **V<sub>th</sub>** = Threshold voltage of the nMOS transistor
 - **R<sub>startup</sub>** = Resistance in the startup circuit path
 
+```
+
 6. **Current Mirror Relationships**
+
+
 The output current \(I_{out}\) is given by:
+
+```
 
 **I<sub>out</sub> = (W/L)<sub>out</sub> · (W/L)<sub>ref</sub> · I<sub>ref</sub>**
 
 Where:
 - **I<sub>ref</sub>** = Reference current set by the current mirror
+
+```
 
 
