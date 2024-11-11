@@ -1,4 +1,4 @@
-# SCMB bandgap reference circuit for ASAP 7nm PDK - avsdbgr_7nm 
+# SBCM bandgap reference circuit for ASAP 7nm PDK - avsdbgr_7nm 
 
 ## Bandgap Reference Circuit characteristics table 
 
