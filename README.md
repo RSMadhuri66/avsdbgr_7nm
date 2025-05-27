@@ -103,8 +103,6 @@ This document summarizes the key parameters of the bandgap reference circuit use
 
 ## Summary of Key Parameters
 
-## 📊 Summary of Key Parameters
-
 | **Parameter**                          | **Value / Description**                             |
 |----------------------------------------|-----------------------------------------------------|
 | **Output Reference Voltage (\(V_{\text{ref}}\))** | 1.12 V to 1.26 V (over a wide temperature range)     |
