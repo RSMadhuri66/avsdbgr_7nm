@@ -1,5 +1,14 @@
 # Simulation and Characterization of SBCM bandgap reference circuit for ASAP 7nm PDK
 
+## What is a bandgap Circuit? 
+
+A bandgap reference circuit is an essential analog building block used to generate a stable and precise reference voltage that remains nearly constant across variations in temperature, supply voltage, and manufacturing process. It typically produces a voltage around 1.2V, which corresponds to the energy bandgap of silicon. The circuit achieves temperature independence by combining two voltage components—one that increases with temperature (PTAT: Proportional To Absolute Temperature) and one that decreases with temperature (CTAT: Complementary To Absolute Temperature)—in such a way that their temperature effects cancel each other out.
+
+## Why do we need a bandgap circuit in 7nm Design? 
+
+In advanced nodes like 7nm, where circuits operate at low supply voltages and are highly sensitive to fluctuations, the role of a bandgap reference becomes even more critical. It provides a reliable voltage baseline required for biasing analog components such as voltage regulators, analog-to-digital converters (ADCs), phase-locked loops (PLLs), and sensor interfaces within digital systems. Since 7nm designs also face increased PVT (Process, Voltage, Temperature) variation, a bandgap reference ensures system stability and performance by anchoring these analog subsystems with a consistent reference. 
+
+
 ## Tools Required for Simulization and characterization 
 
 - Vitual Box (Ubuntu) for Windows or UTM (Ubuntu Image) for Mac OS
@@ -9,6 +18,12 @@
 - ASAP 7nm PDK - Has all the circuits/FETs required for 7nm characterization
 
 ## Steps for Installation 
+
+#### Virtual Machine Installation 
+
+For Windows users, download virtual box and install ubuntu. You can follow this link and install virtual box. [Virtual box Installation](https://www.youtube.com/watch?v=rJ9ysibH768&ab_channel=GEEKrar) 
+
+For Mac, Install UTM and then load Ubuntu Image, This should launch ubuntu in your Mac. [Ubuntu through UTM](https://www.youtube.com/watch?v=MVLbb1aMk24&ab_channel=MoodyCodes)
 
 #### Installation of Xschem
 
@@ -67,7 +82,7 @@ git clone https://github.com/The-OpenROAD-Project/asap7.git
 
 The BSIM-CMG (Berkeley Short-channel IGFET Model – Common Multi-Gate) is a compact SPICE model developed by the BSIM Group at UC Berkeley specifically for multi-gate (MG) FETs, including FinFETs, Gate-All-Around (GAA) FETs, and other emerging multi-gate transistor architectures used in advanced technology nodes. [BSIM-CMG](https://bsim.berkeley.edu/models/bsimcmg/) 
 
-- For Mac Users the BSIM-CMG model which is given in the website doesn't work, 
+- For Mac Users the BSIM-CMG model which is given in the website doesn't work, we need a specific osdi which is written in verilog A, so that 
 
 ## Bandgap Reference Circuit characteristics table 
 
@@ -88,14 +103,19 @@ This document summarizes the key parameters of the bandgap reference circuit use
 
 ## Summary of Key Parameters
 
-- **Output Reference Voltage (\(V_{\text{ref}}\))**: Ranges from 1.12 V to 1.26 V across a wide temperature range.
-- **Complementary to Absolute Temperature (\(V_{ctat}\))**: Essential for temperature compensation.
-- **Proportional to Absolute Temperature (\(V_{ptat}\))**: Ranges from 0.93 V to 1.11 V.
-- **Supply Voltage (\(V_{DD}\))**: Fixed at 1.4 V.
-- **Supply Current (\(IDD\))**: The current draw when enabled is **35.20 µA** at 27°C.
-- **Load Resistance (\(R_L\))**: 33.33 kΩ, affecting output voltage under load.
-- **Resistance \(R1\)**: Set at 33 kΩ which is the resistance near PTAT circuit.
-- **Temperature Coefficient** : To find out voltage stability.
+## 📊 Summary of Key Parameters
+
+| **Parameter**                          | **Value / Description**                             |
+|----------------------------------------|-----------------------------------------------------|
+| **Output Reference Voltage (\(V_{\text{ref}}\))** | 1.12 V to 1.26 V (over a wide temperature range)     |
+| **CTAT Voltage (\(V_{\text{ctat}}\))**           | Provides temperature compensation                   |
+| **PTAT Voltage (\(V_{\text{ptat}}\))**           | 0.93 V to 1.11 V                                     |
+| **Supply Voltage (\(V_{DD}\))**                 | Fixed at 1.4 V                                      |
+| **Supply Current (\(I_{DD}\))**                 | 35.20 µA at 27°C (when enabled)                     |
+| **Load Resistance (\(R_L\))**                   | 33.33 kΩ (affects output under load)                |
+| **Resistor \(R_1\)**                            | 33 kΩ (associated with the PTAT branch)             |
+| **Temperature Coefficient**                     | Used to evaluate voltage stability across temp      |
+
 
 ## Explanation 
 
