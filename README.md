@@ -142,16 +142,17 @@ This document summarizes the key parameters of the bandgap reference circuit use
 
 ## Summary of Key Parameters
 
-| **Parameter**                          | **Value / Description**                             |
-|----------------------------------------|-----------------------------------------------------|
-| **Output Reference Voltage (\(V_{\text{ref}}\))** | 1.12 V to 1.26 V (over a wide temperature range)     |
-| **CTAT Voltage (\(V_{\text{ctat}}\))**           | Provides temperature compensation                   |
-| **PTAT Voltage (\(V_{\text{ptat}}\))**           | 0.93 V to 1.11 V                                     |
-| **Supply Voltage (\(V_{DD}\))**                 | Fixed at 1.4 V                                      |
-| **Supply Current (\(I_{DD}\))**                 | 35.20 µA at 27°C (when enabled)                     |
-| **Load Resistance (\(R_L\))**                   | 33.33 kΩ (affects output under load)                |
-| **Resistor \(R_1\)**                            | 33 kΩ (associated with the PTAT branch)             |
-| **Temperature Coefficient**                     | Used to evaluate voltage stability across temp      |
+| **Parameter**             | **Value / Description**                             |
+|---------------------------|-----------------------------------------------------|
+| **Output Reference Voltage (Vref)** | 1.12 V to 1.26 V (over a wide temperature range)     |
+| **CTAT Voltage (Vctat)**  | Provides temperature compensation                   |
+| **PTAT Voltage (Vptat)**  | 0.93 V to 1.11 V                                     |
+| **Supply Voltage (VDD)**  | Fixed at 1.4 V                                      |
+| **Supply Current (IDD)**  | 35.20 µA at 27°C (when enabled)                     |
+| **Load Resistance (RL)**  | 33.33 kΩ (affects output under load)                |
+| **Resistor R1**           | 33 kΩ (associated with the PTAT branch)             |
+| **Temperature Coefficient** | Used to evaluate voltage stability across temp   |
+
 
 
 ## Explanation 
