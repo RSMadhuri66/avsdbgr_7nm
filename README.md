@@ -84,6 +84,45 @@ The BSIM-CMG (Berkeley Short-channel IGFET Model – Common Multi-Gate) is a com
 
 - For Mac Users the BSIM-CMG model which is given in the website doesn't work, we need a specific osdi which is written in verilog A, so that 
 
+## Step-by-Step Design Overview
+
+### Schematic Creation
+
+1. Define the Circuit Nodes: Key nodes were defined, including power supply (VDD), ground (GND), output reference voltage (Vref), and critical internal nodes.
+2. Component Selection
+
+NFets and Pfets : The ASAP 7nm process models for both PMOS (asap_7nm_pfet) and NMOS (asap_7nm_nfet) transistors. For the performance like BJTs, Nfets Drain and Gate were shorted. This was done for accurate results. 
+
+3. Resistors: Standard resistors were placed to set biasing currents and establish gain for temperature compensation, the values were adjusted according to the PTAT and CTAT behaviour. R1 is 33k and R2 (Rref) is 50k
+
+4. Power Supply Configuration : Configured a 1.4V power supply (VDD) as the main source for the circuit, ensuring all components received adequate voltage for proper operation.
+Current Mirrors Implementation and implemented a current mirror using PMOS transistors to provide a stable current source for the circuit. This is critical for the accurate generation of both CTAT and PTAT voltages.
+The current mirror consists of two PMOS transistors, with one configured as a reference and the other mirroring the current to the output stage.
+5. CTAT and PTAT Voltage Generation
+
+```CTAT Voltage:``` Created a pathway for generating a voltage that decreases with increasing temperature, resembling the PTAT behavior. This was achieved through the arrangement of NMOS transistors connected to a resistor that sets the appropriate voltage drop.
+```PTAT Voltage:``` A separate branch of the circuit was designed to produce a voltage that is proportional to the absolute temperature. This was done using a different arrangement of NMOS transistors, ensuring that the output voltage changes linearly with temperature.
+
+6. Output Voltage (Vref) Configuration
+The final output voltage (Vref) was derived from the combination of CTAT and PTAT outputs. 
+
+After completing the schematic,  the simulation parameters were set up within Xschem to run a DC analysis. The simulation was configured to sweep the temperature from -45°C to 125°C.
+
+
+The below image is taken as a reference for designing a bandgap circuit using SBCM 
+
+<picture>
+<img alt = "Bandgap_reference" src="reference.png">
+</picture>
+
+
+#### Design using Xschem 
+
+<picture>
+<img alt = "Xschem" src="xschem.png">
+</picture>
+
+
 ## Bandgap Reference Circuit characteristics table 
 
 This document summarizes the key parameters of the bandgap reference circuit used for temperature compensation and stable output voltage generation.
