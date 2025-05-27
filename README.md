@@ -1,4 +1,73 @@
-# SBCM bandgap reference circuit for ASAP 7nm PDK - avsdbgr_7nm 
+# Simulation and Characterization of SBCM bandgap reference circuit for ASAP 7nm PDK
+
+## Tools Required for Simulization and characterization 
+
+- Vitual Box (Ubuntu) for Windows or UTM (Ubuntu Image) for Mac OS
+- Xschem - Spice Schematic Simulator for drawing and simulating circuits 
+- Ngspice - Analog Circuit Simulator
+- BSIM-CMG (Berkeley Short-channel IGFET Model for the Common Multi-Gate Structure), it is a compact model which helps in extending the characteristics of FinFets.
+- ASAP 7nm PDK - Has all the circuits/FETs required for 7nm characterization
+
+## Steps for Installation 
+
+#### Installation of Xschem
+
+Xschem is a schematic capture program, it allows creation of hierarchical representation of circuits with a top down approach . By focusing on interfaces, hierarchy and instance properties a complex system can be described in terms of simpler building blocks. A VHDL or Verilog or Spice netlist can be generated from the drawn schematic, allowing the simulation of the circuit. Key feature of the program is its drawing engine written in C and using directly the Xlib drawing primitives; this gives very good speed performance, even on very big circuits. The user interface is built with the Tcl-Tk toolkit, tcl is also the extension language used. [Xschem Repo](https://xschem.sourceforge.io/stefan/index.html) 
+
+```
+#install xschem a schemaic capture tool
+git clone https://github.com/StefanSchippers/xschem.git xschem
+cd xschem
+./configure 
+make 
+sudo make install 
+cd ..
+
+```
+
+#### Installation of Ngspice 
+
+Ngspice is an open-source circuit simulator based on SPICE (Simulation Program with Integrated Circuit Emphasis), widely used for simulating analog, digital, and mixed-signal electronic circuits. It allows designers to model circuit behavior using netlists or schematic capture tools like Xschem, and then perform various analyses such as transient, AC, DC, and noise simulations. Ngspice supports both standalone use and integration into EDA workflows, making it a powerful tool in open-source and academic IC design environments. Its compatibility with standard SPICE models and extensions for digital logic and behavioral modeling makes it versatile for both simple and complex circuit analysis. [Ngspice](https://ngspice.sourceforge.io/)
+
+```
+## clone the source repository into a local ngspice_git directory
+git clone https://git.code.sf.net/p/ngspice/ngspice ngspice_git
+cd ngspice_git
+mkdir release
+./autogen.sh
+cd release
+## by default if no --prefix is provided ngspice will install under /usr/local/{bin,share,man,lib}
+## you can add a --prefix=/home/username to install into your home directory.
+../configure --with-x --enable-xspice --disable-debug --enable-cider --with-readline=yes --enable-openmp --enable-osdi
+## build the program
+make
+## install the program and needed files.
+sudo make install
+
+```
+
+#### ASAP 7nm PDK 
+
+The ASAP7 PDK (Predictive Design Kit) is a 7nm (nanometer) process design kit developed for academic and research purposes, not for commercial fabrication. It was created by Arizona State University in collaboration with ARM Holdings to simulate advanced technology nodes and study design methodologies, tools, and architecture at 7nm without requiring access to proprietary foundry data. [ASAP 7nm PDK](https://asap.asu.edu/) 
+
+There were two git repositories which I used for this experiment, you could clone either of them and install the PDK and related files. 
+
+```
+git clone https://github.com/AsahiroKenpachi/asap_7nm_Xschem.git
+
+```
+
+```
+
+git clone https://github.com/The-OpenROAD-Project/asap7.git
+
+``` 
+
+#### BSIM-CMG (Berkeley Short-channel IGFET Model for the Common Multi-Gate Structure)
+
+The BSIM-CMG (Berkeley Short-channel IGFET Model – Common Multi-Gate) is a compact SPICE model developed by the BSIM Group at UC Berkeley specifically for multi-gate (MG) FETs, including FinFETs, Gate-All-Around (GAA) FETs, and other emerging multi-gate transistor architectures used in advanced technology nodes. [BSIM-CMG](https://bsim.berkeley.edu/models/bsimcmg/) 
+
+- For Mac Users the BSIM-CMG model which is given in the website doesn't work, 
 
 ## Bandgap Reference Circuit characteristics table 
 
