@@ -577,5 +577,16 @@ I would like to thank Kunal Ghosh (Co-Founder of VSD), Dr Skandha Deepsita (Seni
 - Github [7nm Reference Repo](https://github.com/AsahiroKenpachi/asap_7nm_Xschem)
 - 7nm Research paper [hal science research paper](https://hal.science/hal-01558775/document)\
 - Ngspice Manual [Manual](https://ngspice.sourceforge.io/docs/ngspice-manual.pdf)
+- Github [Bandgap Github](https://github.com/johnkustin/bandgapReferenceCircuit)
+- Github[RSMadhuri](https://github.com/RSMadhuri66/Bandgap-Reference-Circuit-with-SCMB-with-ASAP-7nm-PDK-/blob/main/README.md)
+- Github [sky130circuitdesign](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop?tab=readme-ov-file)
+- Research paper [Layout and chractertization](https://mpedram.com/Papers/PowerDensity_7nm_FinFET-glsvsli15.pdf)
+- Uc Berkeley research [Finfets](https://escholarship.org/content/qt2d46r42j/qt2d46r42j.pdf?t=q6z2kq)
+- IIT labs [Finfet's research](https://vlsi-iitg.vlabs.ac.in/CMOS_theory.html#:~:text=Inverter%20Static%20Characteristics%20(VTC),logic%2Dlevels%20can%20be%20obtained)
+- Michigan university classes [Parameters claculation](https://www.egr.msu.edu/classes/ece410/mason/files/Ch7.pdf)
+- Cornell university ECE5745 [Capacitance and parameters](https://cornell-ece5745.github.io/ece5745-tut10-spice/)
+- Ngspice tutorial [Tcl/Tk](https://ngspice.sourceforge.io/ngspice-control-language-tutorial.html)
+
+
 
 
