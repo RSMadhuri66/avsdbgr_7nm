@@ -1,4 +1,4 @@
-# Simulation and Characterization of SBCM bandgap reference circuit for ASAP 7nm PDK
+t# Simulation and Characterization of SBCM bandgap reference circuit for ASAP 7nm PDK
 
 ## What is a bandgap Circuit? 
 
@@ -89,7 +89,7 @@ sudo apt install autoconf automake libtool
 ./autogen.sh
 mkdir build
 sudo apt install libreadline-dev
-../configure --with-x --enable-cider --enable-openmp --enable-xspice
+../configure --with-x --enable-xspice --disable-debug --enable-cider --with-readline=yes --enable-openmp --enable-osdi
 make -j$(nproc)
 sudo make install
 ngspice
