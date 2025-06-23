@@ -79,6 +79,22 @@ sudo make install
 
 ```
 
+If the above steps don't work then, you could do the following as well, 
+
+```
+## clone the source repository into a local ngspice_git directory
+git clone https://git.code.sf.net/p/ngspice/ngspice ngspice_git
+cd ngspice_git
+sudo apt install autoconf automake libtool
+./autogen.sh
+mkdir build
+sudo apt install libreadline-dev
+../configure --with-x --enable-cider --enable-openmp --enable-xspice
+make -j$(nproc)
+sudo make install
+ngspice
+
+``` 
 ### ASAP 7nm PDK 
 
 The ASAP7 PDK (Predictive Design Kit) is a 7nm (nanometer) process design kit developed for academic and research purposes, not for commercial fabrication. It was created by Arizona State University in collaboration with ARM Holdings to simulate advanced technology nodes and study design methodologies, tools, and architecture at 7nm without requiring access to proprietary foundry data. [ASAP 7nm PDK](https://asap.asu.edu/) 
