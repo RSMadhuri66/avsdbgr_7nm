@@ -66,6 +66,7 @@ Ngspice is an open-source circuit simulator based on SPICE (Simulation Program w
 git clone https://git.code.sf.net/p/ngspice/ngspice ngspice_git
 cd ngspice_git
 mkdir release
+sudo apt install autoconf automake libtool
 ./autogen.sh
 cd release
 ## by default if no --prefix is provided ngspice will install under /usr/local/{bin,share,man,lib}
