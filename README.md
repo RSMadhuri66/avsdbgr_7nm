@@ -4,6 +4,8 @@ t# Simulation and Characterization of SBCM bandgap reference circuit for ASAP 7n
 
 A bandgap reference circuit is an essential analog building block used to generate a stable and precise reference voltage that remains nearly constant across variations in temperature, supply voltage, and manufacturing process. It typically produces a voltage around 1.2V, which corresponds to the energy bandgap of silicon. The circuit achieves temperature independence by combining two voltage components—one that increases with temperature (PTAT: Proportional To Absolute Temperature) and one that decreases with temperature (CTAT: Complementary To Absolute Temperature)—in such a way that their temperature effects cancel each other out.
 
+To understand more about bandgap circuit refer to ``` https://github.com/vsdip/vsdopen2021_bgr ```
+
 ## Why do we need a bandgap circuit in 7nm Design? 
 
 In advanced nodes like 7nm, where circuits operate at low supply voltages and are highly sensitive to fluctuations, the role of a bandgap reference becomes even more critical. It provides a reliable voltage baseline required for biasing analog components such as voltage regulators, analog-to-digital converters (ADCs), phase-locked loops (PLLs), and sensor interfaces within digital systems. Since 7nm designs also face increased PVT (Process, Voltage, Temperature) variation, a bandgap reference ensures system stability and performance by anchoring these analog subsystems with a consistent reference. 
