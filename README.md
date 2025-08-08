@@ -150,6 +150,14 @@ The below image is taken as a reference for designing a bandgap circuit using SB
 </picture>
 
 
+#### How to add symbols in XSCHEM 
+
+<picture>
+<img alt = "Symbols" src="adding_symbols.png">
+</picture>
+
+To open xschem in your VDI, run ``` xschem ``` in your terminal, then the xschem tool opens up and to add symbols, click on current directory (the directory in which you copies the ASAP 7nm PDK) (i.e., ``` https://github.com/AsahiroKenpachi/asap_7nm_Xschem.git ```), and then you will be able to see the 7nm symbols, drag and drop onto xschem to design the model. 
+
 #### Design using Xschem 
 
 <picture>
